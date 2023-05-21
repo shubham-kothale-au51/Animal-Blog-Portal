@@ -10,6 +10,9 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/user', router);
 app.use('/api/blog', blogRouter);
+
+mongoose.set('strictQuery', false);
+
 mongoose
   .connect('mongodb+srv://skothale135:e9tJpONoEqow3KuH@blogapp.79vtgfb.mongodb.net/BlogApp', {
     useNewUrlParser: true,
