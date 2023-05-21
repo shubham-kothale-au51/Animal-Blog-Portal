@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 const blogRouter = require('./routes/blog-routes.js');
 const router = require('./routes/user-routes.js');
 const cors = require('cors');
